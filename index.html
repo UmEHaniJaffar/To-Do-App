@@ -1,0 +1,28 @@
+<!--Task6-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>To Do App</title>
+</head>
+<body>
+    <div class="container">
+        <!--Main container with white background-->
+        <div class="toDoApp">
+            <h2>To Do App <!--Main heading-->
+                <img src="./images/toDoIcon.png " > <!--The small icon of to do app-->
+            </h2>
+            <form class="row"> <!--A form whose submission adds new task to the list-->
+                <input type="text" id="inputBox" placeholder="Add new Task"/> <!--the input field for task addition-->
+                <button type="button" onclick="addData()">Add</button> <!--the input field for task addition-->
+            </form>
+            <ul id="listContainer"> <!--The list of tasks which will be created-->
+                <!--The list is empty right now because tasks are added when user inputs, using javaScript-->
+            </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

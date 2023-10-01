@@ -1,0 +1,103 @@
+ /*class for overall structure*/
+ *{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+/*Main div representing the whole page*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+    /*background will be gradient of two shades of green color*/
+    background: linear-gradient(135deg,#B1F0A2,#1C640A);
+    padding: 10px;
+}
+/*inner div with white background*/
+.toDoApp{
+    width: 100%;
+    max-width: 550px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    background: white;
+}
+.toDoApp h2{
+    color: darkgreen;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.toDoApp img{
+    width: 50px;
+    margin-left: 10px;
+}
+/*a row containing input field and button*/
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: darkgray;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-radius: 30px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #1C640A;
+    color: black;
+    padding: 16px 50px;
+    font-size: 16px;
+}
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    font-size: 17px;
+    position: relative;
+}
+/*to show an icon before the tasks stated*/
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png );
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 15px;
+}
+/*for class of li tags*/
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(./images/checked.png );
+}
+/*the x symbol*/
+ul li span{
+    position: absolute;
+    right: 0;
+    top:5px ;
+    width: 40px;
+    height:40px ;
+    line-height:40px ;
+    font-size: 22px;
+    text-align: center;
+    color: black;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: darkgrey;
+}
